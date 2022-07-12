@@ -20,7 +20,7 @@ void carregaMatrizCompleta(char dna_C[][TAM_C])//Declara matriz manual
 	
 	for(l=0; l<TAM_C; l++){
 		for(k=0; k<TAM_C; k++){
-			printf("Informe o valor para dna[%i][%i]: ", l, k);
+			printf("Informe o valor para dna[%i][%i](em minusculo): ", l, k);
 			scanf("%s", &dna_C[l][k]);
 			
 			if(dna_C[l][k] != a && dna_C[l][k] != t && dna_C[l][k] != c && dna_C[l][k] != g) //Verifica DNA
@@ -207,7 +207,7 @@ int percorreMatriz(char dna_C[][TAM_C], char dna[][TAM])//percorre e analisa a m
 					}	
 				}
 				
-				//verificações	
+				//verificaÃ§Ãµes	
 				if(verifica_horizontal(dna) == 1 || verifica_vertical(dna) == 1 || princDiag(dna) == 1|| segunDiag(dna) == 1)				
 				{
 					macaco = 1;
